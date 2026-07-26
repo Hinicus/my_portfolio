@@ -68,7 +68,7 @@ function restorePhoneText() {
   setTimeout(() => {
     phoneText.textContent = phoneNumber;
     phoneText.classList.remove("text-[#5a924e]");
-    emailText.classList.add("text-gray-400");
+    phoneText.classList.add("text-gray-400");
     phoneText.classList.remove("font-semibold");
   }, 2000);
 }
@@ -92,7 +92,7 @@ copyEmail.addEventListener("click", async () => {
 copyNumber.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText("09151148634");
-    emailText.classList.remove("text-gray-400");
+    phoneText.classList.remove("text-gray-400");
     phoneText.classList.add("text-[#5a924e]");
     phoneText.textContent = "Copied Phone Number!";
     phoneText.classList.add("font-semibold");
