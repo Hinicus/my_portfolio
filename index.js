@@ -74,9 +74,8 @@ function restorePhoneText() {
 copyEmail.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(emailAddress);
-
-    emailText.textContent = "Copied Email Address!";
     emailText.classList.add("text-[#5a924e]");
+    emailText.textContent = "Copied Email Address!";
     emailText.classList.add("font-semibold");
 
     restoreEmailText();
@@ -90,9 +89,8 @@ copyEmail.addEventListener("click", async () => {
 copyNumber.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText("09151148634");
-
-    phoneText.textContent = "Copied Phone Number!";
     phoneText.classList.add("text-[#5a924e]");
+    phoneText.textContent = "Copied Phone Number!";
     phoneText.classList.add("font-semibold");
 
     restorePhoneText();
