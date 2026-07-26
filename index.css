@@ -112,6 +112,13 @@ body {
   color: white;
 }
 
+#profile-nav .hvr-sweep-to-top::before {
+  background-color: #5a924e !important;
+}
+#profile-nav .hvr-sweep-to-top:hover {
+  color: white;
+}
+
 .contact-btn.hvr-fade:hover,
 .contact-btn.hvr-fade:focus,
 .contact-btn.hvr-fade:active {
