@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/MB.svg" />
+    <title>Matthew Antonio</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="flex flex-col font-dm-sans">
+    <!--Floating nav bar for mobile-->
+    <div class="fixed top-6 right-6 z-50 sm:hidden">
+      <button
+        id="menu-on-toggle"
+        class="bg-black text-white p-3 rounded-full shadow-lg focus:bg-highlight-green focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div
+        id="mobile-menu"
+        class="offscreen-nav animate__animated animate__faster hidden">
+        <button
+          id="menu-off-toggle"
+          class="group absolute top-6 right-6 x-button">
+          <i
+            class="fa-solid fa-xmark group-hover:text-highlight-green group-focus:text-highlight-green group-active:text-highlight-green"></i>
+        </button>
+
+        <div
+          class="flex-center mt-2 text-white text-3xl font-extrabold text-center">
+          <ul id="mobile-menu-list" class="flex flex-col gap-5 p-4">
+            <div class="mt-5 flex justify-center items-center text-white">
+              <a href="#Home"
+                ><svg
+                  class="h-24 aspect-square"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 384">
+                  <defs>
+                    <clipPath id="a">
+                      <path d="M64 27h256v330H64Zm0 0" />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="m237 63 33 26v25l50-40v181l-33 26V143l-68 54 51 41v57l-33 26-45 36-44-35-34-27V157l-17-14v138l-33-26V74l50 40V89l34-27 44-35zm-89 216 44 35 45-36v-24l-89-70Zm0-174v36l44 35 45-36v-34l-45-36Zm0 0" />
+                  </g>
+                  <path
+                    fill="currentColor"
+                    d="m128 145-7 4-2 3-1-1 2-3 1-8 1 1-1 6 6-3Zm-2 13-1-2-1-2 1-3 2-1 2-1 2 1 2 2v2l-1 2-2 2zm1-1h3l1-1 1-2v-2l-1-1h-3l-2 1v2zm16 2-5 7-2-1 1-1h-1l-2-1-1-1v-4l3-4 2 1-3 4-1 2 1 1 2 1 2-1 3-4Zm2 3h3l-1 2v-1q-1-1-3 1l-3 4-1-1 5-7 1 1Zm8 6h2l2 1 1 1 1 3-1 2-2 1h-4l-2-2v-1l-3 4h-2l8-11 1 1Zm4 6v-3l-1-1-1-1h-2l-1 1-1 2v2l1 1h3zm2 2 2-2h2l3 2v2l1-2 2 1-6 7-1-1 1-1h-3l-2-2v-2zm6 4 1-2-1-1-2-2h-2l-1 1-1 2 1 2 1 1h2zm6 1 2-1 1 1-1 1q-2-2-4 1l-2 4-2-1 6-7 1 1Zm1 4 2-1 2-1 4 3v1l1-1 1 1-5 7-1-1 1-1h-2l-2-1-1-1-1-2zm6 5 1-2v-1l-3-2h-1l-1 1-1 2v1l1 2h3zm9 0 2 2v2l1-2 1 1-5 8-2 1h-4l-2-3v-2h1v2l2 2h2l2-1 1-2-2 1-2-1-2-4 1-2 2-2zm0 6 1-2v-1l-3-2h-1l-2 2v3l1 1 1 1 2-1zm6 1h4l-1 1h-1q-1-2-3 1l-3 4-1-1 5-7 1 1Zm2 4 2-1h2l3 2v2l1-2 2 1-6 7-1-1 1-1h-3l-2-2v-2zm6 5 1-2-1-1-2-2h-2l-1 1-1 2 1 2 1 1h2zm6 1h4l1 2v2l-1 2-2 2h-4l-1-2v-2l-4 5-1-1 8-10h1Zm3 5 1-1v-2l-1-1h-3l-2 1v3l1 1 3 1zm9 1 1 2v3l-3 5-2-1 3-4 1-2-1-2h-2l-2 1-3 4-1-1 7-10 1 1-2 4zm9 8-3 5v1l1 1-1 1-1-1-1-1 1-2 3-4-1-1v-1l1 1 2-2 1 1zl1 2v1Zm8 10-5-4-1 3 1 1 2 1 1-1 2 1-3 1-2-1-2-1v-3l1-2 2-2h2l2 1 1 2 1 2zm-1-1v-3l-1-1h-4Zm3 8 1-3-4 1-1-1 5-2v-5l1 1v4l4-2 1 1-5 2v5Zm9-3-3 4v2l1 1-1 1-1-1-1-2 1-2 3-4h-1v-1h1l2-2 1 1zl1 1v1Zm0 0 " /></svg
+              ></a>
+            </div>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <div
+              class="contact-btn flex w-fit mx-auto justify-center text-center border-white border-3 rounded-md p-1 mt-1 hvr-fade text-white">
+              <h1 class="font-extrabold text-3xl">Contact Me</h1>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="Home" class="w-full h-5 bg-highlight-green shadow-lg"></div>
+
+    <!--Contact Me-->
+    <div
+      id="contact-me-card"
+      class="font-bold p-5 z-500 fixed hidden flex-col items-center left-1/2 -translate-x-1/2 -bottom-1 border-3 rounded-t-2xl border-highlight-green w-[90vw] h-full lg:h-180 bg-black pt-[clamp(50px,2vh,10p)] animate__animated animate__faster"
+      style="max-height: 83%">
+      <button
+        id="close-contact-btn"
+        class="group absolute flex h-12 w-12 top-6 right-6 x-button p-0! justify-center items-center">
+        <i
+          class="fa-solid fa-xmark text-2xl group-hover:text-highlight-green group-focus:text-highlight-green group-active:text-highlight-green"></i>
+      </button>
+      <i class="fa-envelope fa-solid text-white text-5xl"></i>
+      <h1 class="text-white font-extrabold text-[clamp(2rem,5vw,3rem)] mb-5">
+        Contact Me
+      </h1>
+
+      <div
+        class="flex flex-col w-full h-full min-h-0 overflow-y-auto p-5 md:grid grid-cols-2 gap-5 bg-[#686868] rounded-2xl">
+        <!--Email-->
+        <div
+          class="grid grid-cols-[auto_1fr] items-center gap-2 card-contact hvr-border-fade md:grid-cols-1 md:justify-items-center"
+          id="email-contact">
+          <div
+            class="icon-contact flex items-center justify-center row-span-2 md:row-span-1">
+            <i class="fa-solid fa-at"></i>
+          </div>
+          <h1
+            class="text-white font-bold contact-text-head self-end md:self-auto">
+            Email
+          </h1>
+          <h2
+            class="break-all contact-text-body text-gray-400 self-start md:self-auto md:text-center"
+            id="email">
+            bulaongmatthew55432@gmail.com
+          </h2>
+        </div>
+
+        <!--Phone Number-->
+        <div
+          class="grid grid-cols-[auto_1fr] items-center gap-2 card-contact hvr-border-fade md:grid-cols-1 md:justify-items-center"
+          id="phone-contact">
+          <div
+            class="icon-contact flex items-center justify-center row-span-2 md:row-span-1">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h1
+            class="text-white font-bold contact-text-head self-end md:self-auto">
+            Phone Number
+          </h1>
+          <h2
+            class="break-all contact-text-body text-gray-400 self-start md:self-auto md:text-center"
+            id="phone-number">
+            +63 915 114 8634
+          </h2>
+        </div>
+
+        <a
+          href="https://www.facebook.com/matthewantonio.bulaong"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-contact flex hvr-border-fade md:justify-center">
+          <div
+            class="grid grid-cols-[auto_1fr] items-center gap-2 md:grid-cols-1 md:justify-items-center">
+            <div
+              class="icon-contact flex items-center justify-center row-span-2 md:row-span-1">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <h1
+              class="text-white font-bold contact-text-head self-end md:self-auto">
+              Facebook
+            </h1>
+            <h2
+              class="break-all contact-text-body text-gray-400 self-start md:self-auto md:text-center">
+              Let's be friends!
+            </h2>
+          </div></a
+        >
+
+        <a
+          href="https://www.linkedin.com/in/matthew-antonio-bulaong-1a1412391"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-contact flex md:justify-center hvr-border-fade">
+          <div
+            class="grid grid-cols-[auto_1fr] items-center gap-2 md:grid-cols-1 md:justify-items-center">
+            <div
+              class="icon-contact flex items-center justify-center row-span-2 md:row-span-1">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <h1
+              class="text-white font-bold contact-text-head self-end md:self-auto">
+              LinkedIn
+            </h1>
+            <h2
+              class="break-all contact-text-body text-gray-400 self-start md:self-auto md:text-center">
+              Connect with Me!
+            </h2>
+          </div></a
+        >
+      </div>
+    </div>
+
+    <!--Nav Bar when scrolling down-->
+    <div
+      class="hidden px-5 md:20 lg:px-25 sm:fixed sm:flex justify-center h-25 top-0 z-5000 w-full bg-highlight-green/90 shadow-lg transition-transform -translate-y-full duration-175"
+      id="scrolling-nav">
+      <nav class="sm:pl-6 md:pl-8 lg:pl-12 w-full flex items-center">
+        <a href="#Home">
+          <svg
+            class="sm:h-12 md:h-16 lg:h-20 aspect-square"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 384">
+            <defs>
+              <clipPath id="a"><path d="M64 27h256v330H64Zm0 0" /></clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m237 63 33 26v25l50-40v181l-33 26V143l-68 54 51 41v57l-33 26-45 36-44-35-34-27V157l-17-14v138l-33-26V74l50 40V89l34-27 44-35zm-89 216 44 35 45-36v-24l-89-70Zm0-174v36l44 35 45-36v-34l-45-36Zm0 0" />
+            </g>
+            <path
+              fill="currentColor"
+              d="m128 145-7 4-2 3-1-1 2-3 1-8 1 1-1 6 6-3Zm-2 13-1-2-1-2 1-3 2-1 2-1 2 1 2 2v2l-1 2-2 2zm1-1h3l1-1 1-2v-2l-1-1h-3l-2 1v2zm16 2-5 7-2-1 1-1h-1l-2-1-1-1v-4l3-4 2 1-3 4-1 2 1 1 2 1 2-1 3-4Zm2 3h3l-1 2v-1q-1-1-3 1l-3 4-1-1 5-7 1 1Zm8 6h2l2 1 1 1 1 3-1 2-2 1h-4l-2-2v-1l-3 4h-2l8-11 1 1Zm4 6v-3l-1-1-1-1h-2l-1 1-1 2v2l1 1h3zm2 2 2-2h2l3 2v2l1-2 2 1-6 7-1-1 1-1h-3l-2-2v-2zm6 4 1-2-1-1-2-2h-2l-1 1-1 2 1 2 1 1h2zm6 1 2-1 1 1-1 1q-2-2-4 1l-2 4-2-1 6-7 1 1Zm1 4 2-1 2-1 4 3v1l1-1 1 1-5 7-1-1 1-1h-2l-2-1-1-1-1-2zm6 5 1-2v-1l-3-2h-1l-1 1-1 2v1l1 2h3zm9 0 2 2v2l1-2 1 1-5 8-2 1h-4l-2-3v-2h1v2l2 2h2l2-1 1-2-2 1-2-1-2-4 1-2 2-2zm0 6 1-2v-1l-3-2h-1l-2 2v3l1 1 1 1 2-1zm6 1h4l-1 1h-1q-1-2-3 1l-3 4-1-1 5-7 1 1Zm2 4 2-1h2l3 2v2l1-2 2 1-6 7-1-1 1-1h-3l-2-2v-2zm6 5 1-2-1-1-2-2h-2l-1 1-1 2 1 2 1 1h2zm6 1h4l1 2v2l-1 2-2 2h-4l-1-2v-2l-4 5-1-1 8-10h1Zm3 5 1-1v-2l-1-1h-3l-2 1v3l1 1 3 1zm9 1 1 2v3l-3 5-2-1 3-4 1-2-1-2h-2l-2 1-3 4-1-1 7-10 1 1-2 4zm9 8-3 5v1l1 1-1 1-1-1-1-1 1-2 3-4-1-1v-1l1 1 2-2 1 1zl1 2v1Zm8 10-5-4-1 3 1 1 2 1 1-1 2 1-3 1-2-1-2-1v-3l1-2 2-2h2l2 1 1 2 1 2zm-1-1v-3l-1-1h-4Zm3 8 1-3-4 1-1-1 5-2v-5l1 1v4l4-2 1 1-5 2v5Zm9-3-3 4v2l1 1-1 1-1-1-1-2 1-2 3-4h-1v-1h1l2-2 1 1zl1 1v1Zm0 0" />
+          </svg>
+        </a>
+        <ul
+          class="flex flex-row sm:gap-3 md:gap-5 lg:gap-7 font-bold md:text-xl lg:text-2xl">
+          <li class="hvr-sweep-to-top p-0.5 px-2">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="hvr-sweep-to-top p-0.5 px-2">
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <li class="hvr-sweep-to-top p-0.5 px-2">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="hvr-sweep-to-top p-0.5 px-2">
+            <a href="#education">Education</a>
+          </li>
+        </ul>
+        <div
+          class="contact-btn ml-auto mr-10 border-white text-white border-3 rounded-md p-1 px-3 hvr-fade cursor-pointer">
+          <h1 class="font-extrabold md:text-xl lg:text-2xl">Contact Me</h1>
+        </div>
+      </nav>
+    </div>
+
+    <!--Profile Section-->
+    <div
+      class="flex-center flex-col gap-5 text-white items-center mt-25 sm:mt-5 xl:p-1 m-5 mb-10">
+      <!--Nav bar for Profile-->
+      <nav
+        class="hidden sm:flex mb-15 justify-start items-center w-full px-5 md:20 lg:px-25">
+        <a href="#Home"
+          ><svg
+            class="sm:h-12 md:h-16 lg:h-24 aspect-square"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 384">
+            <defs>
+              <clipPath id="a"><path d="M64 27h256v330H64Zm0 0" /></clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m237 63 33 26v25l50-40v181l-33 26V143l-68 54 51 41v57l-33 26-45 36-44-35-34-27V157l-17-14v138l-33-26V74l50 40V89l34-27 44-35zm-89 216 44 35 45-36v-24l-89-70Zm0-174v36l44 35 45-36v-34l-45-36Zm0 0" />
+            </g>
+            <path
+              fill="currentColor"
+              d="m128 145-7 4-2 3-1-1 2-3 1-8 1 1-1 6 6-3Zm-2 13-1-2-1-2 1-3 2-1 2-1 2 1 2 2v2l-1 2-2 2zm1-1h3l1-1 1-2v-2l-1-1h-3l-2 1v2zm16 2-5 7-2-1 1-1h-1l-2-1-1-1v-4l3-4 2 1-3 4-1 2 1 1 2 1 2-1 3-4Zm2 3h3l-1 2v-1q-1-1-3 1l-3 4-1-1 5-7 1 1Zm8 6h2l2 1 1 1 1 3-1 2-2 1h-4l-2-2v-1l-3 4h-2l8-11 1 1Zm4 6v-3l-1-1-1-1h-2l-1 1-1 2v2l1 1h3zm2 2 2-2h2l3 2v2l1-2 2 1-6 7-1-1 1-1h-3l-2-2v-2zm6 4 1-2-1-1-2-2h-2l-1 1-1 2 1 2 1 1h2zm6 1 2-1 1 1-1 1q-2-2-4 1l-2 4-2-1 6-7 1 1Zm1 4 2-1 2-1 4 3v1l1-1 1 1-5 7-1-1 1-1h-2l-2-1-1-1-1-2zm6 5 1-2v-1l-3-2h-1l-1 1-1 2v1l1 2h3zm9 0 2 2v2l1-2 1 1-5 8-2 1h-4l-2-3v-2h1v2l2 2h2l2-1 1-2-2 1-2-1-2-4 1-2 2-2zm0 6 1-2v-1l-3-2h-1l-2 2v3l1 1 1 1 2-1zm6 1h4l-1 1h-1q-1-2-3 1l-3 4-1-1 5-7 1 1Zm2 4 2-1h2l3 2v2l1-2 2 1-6 7-1-1 1-1h-3l-2-2v-2zm6 5 1-2-1-1-2-2h-2l-1 1-1 2 1 2 1 1h2zm6 1h4l1 2v2l-1 2-2 2h-4l-1-2v-2l-4 5-1-1 8-10h1Zm3 5 1-1v-2l-1-1h-3l-2 1v3l1 1 3 1zm9 1 1 2v3l-3 5-2-1 3-4 1-2-1-2h-2l-2 1-3 4-1-1 7-10 1 1-2 4zm9 8-3 5v1l1 1-1 1-1-1-1-1 1-2 3-4-1-1v-1l1 1 2-2 1 1zl1 2v1Zm8 10-5-4-1 3 1 1 2 1 1-1 2 1-3 1-2-1-2-1v-3l1-2 2-2h2l2 1 1 2 1 2zm-1-1v-3l-1-1h-4Zm3 8 1-3-4 1-1-1 5-2v-5l1 1v4l4-2 1 1-5 2v5Zm9-3-3 4v2l1 1-1 1-1-1-1-2 1-2 3-4h-1v-1h1l2-2 1 1zl1 1v1Zm0 0" />
+          </svg>
+        </a>
+        <ul class="flex flex-row gap-7 m-5 font-bold md:text-xl lg:text-2xl">
+          <li class="hvr-sweep-to-top p-0.5 px-1">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="hvr-sweep-to-top p-0.5 px-1">
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <li class="hvr-sweep-to-top p-0.5 px-1">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="hvr-sweep-to-top p-0.5 px-1">
+            <a href="#education">Education</a>
+          </li>
+        </ul>
+        <div
+          class="contact-btn ml-auto mr-5 border-white border-3 rounded-md p-1 px-3 hvr-fade cursor-pointer">
+          <h1 class="font-extrabold md:text-xl lg:text-2xl">Contact Me</h1>
+        </div>
+      </nav>
+
+      <img
+        class="rounded-full w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mb-10 border-5 border-white hocus-profile"
+        src="/images/my_pic.jpg"
+        alt="Profile Picture"
+        tabindex="0" />
+      <h1
+        class="text-[clamp(2rem,5vw,2.5rem)] font-bold text-gradient text-center">
+        Matthew Antonio B. Bulaong
+      </h1>
+      <h3
+        class="font-semibold text-[clamp(1rem,5vw,1.75rem)] sm:px-15 xl:px-50">
+        Hey! Computer Engineering graduate here hoping to be an IT professional.
+        Check out my latest projects below. I try to do my best to create things
+        with <span class="text-red-500">love</span>.
+      </h3>
+    </div>
+
+    <!--Projects Section-->
+    <div
+      id="projects"
+      class="flex-center flex-col gap-3 text-white bg-black mt-5 p-5 div-padding">
+      <h1 class="fluid-text-head text-left font-bold text-highlight-green">
+        Projects
+      </h1>
+      <p class="fluid-text-body text-left font-semibold">
+        I like building stuff, here you can check the things I made :)
+      </p>
+
+      <!-- Project Cards -->
+      <div
+        class="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-10 mt-5 p-5 grow">
+        <!--ChanTech-->
+        <div class="card-project text-center hocus-card">
+          <div class="absolute top-0 left-0 w-full h-20 bg-[#9ca3af] z-0"></div>
+          <div
+            class="relative z-10 flex flex-col h-full p-3 sm:p-3 md:p-4 xl:p-5 gap-3">
+            <img
+              src="/images/Aegis of Cyberprotection.png"
+              alt="ChanTech"
+              class="img-project" />
+
+            <h1 class="card-header">ChanTech</h1>
+            <p class="card-body text-left">
+              A pitch website showcasing our proposed product: The Aegis of
+              Cyberprotection (AoC). Using HTML, CSS and JS for the front-end.
+              With the JS and PHP handling the authentication and database
+              management.
+            </p>
+            <div class="card-body text-left mt-auto">
+              <span class="font-bold text-gray-300">Tools used:</span>
+              VSCode, HTML, CSS, JS, PHP, & MySQL
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card Wanderlust -->
+        <div class="card-project text-center hocus-card">
+          <div class="absolute top-0 left-0 w-full h-20 bg-[#9ca3af] z-0"></div>
+          <div
+            class="relative z-10 flex flex-col h-full p-3 sm:p-3 md:p-4 xl:p-5 gap-3">
+            <img
+              src="/images/Wanderlust.png"
+              alt="Wanderlust"
+              class="img-project" />
+
+            <h1 class="card-header">Wanderlust</h1>
+            <p class="card-body text-left">
+              A visually engaging front-end travel website that brings global
+              tourist destinations to life through code.
+            </p>
+            <div class="card-body text-left mt-auto">
+              <span class="font-bold text-gray-300">Tools used:</span>
+              VSCode, HTML & CSS
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card Meneses -->
+        <div class="card-project text-center hocus-card">
+          <div class="absolute top-0 left-0 w-full h-20 bg-[#9ca3af] z-0"></div>
+          <div
+            class="relative z-10 flex flex-col h-full p-3 sm:p-3 md:p-4 xl:p-5 gap-3">
+            <img
+              src="/images/Meneses_Campus.PNG"
+              alt="BulSU Meneses Campsus Website"
+              class="img-project" />
+
+            <h1 class="card-header">BulSU Meneses Campus Website</h1>
+            <p class="card-body text-left">
+              The website uses a Content Management System built from scratch
+              using HTML, CSS, and JavaScript as its front-end, while using PHP
+              as its backend. Students can view information about BulSU -
+              Meneses Campus, while Admin and Head Admins can add more
+              information such as announcements, news, events using forms.
+            </p>
+            <div class="card-body text-left mt-auto">
+              <span class="font-bold text-gray-300">Tools used:</span>
+              HTML, CSS, JS, PHP, MySQL & VSCode
+            </div>
+          </div>
+        </div>
+
+        <!--Project Card Meysmook-->
+        <div class="card-project text-center hocus-card">
+          <div class="absolute top-0 left-0 w-full h-20 bg-[#9ca3af] z-0"></div>
+          <div
+            class="relative z-10 flex flex-col h-full p-3 sm:p-3 md:p-4 xl:p-5 gap-3">
+            <img
+              src="/images/Meysmook.PNG"
+              alt="BulSU Meneses Campsus Website"
+              class="img-project" />
+
+            <h1 class="card-header">Meysmook</h1>
+            <p class="card-body">
+              A java application that allows students to SIGN UP, LOG IN, and
+              VIEW other students in their school. Students can create new
+              accounts using the forms provided in the application and log in to
+              view other students.
+            </p>
+            <div class="card-body text-left mt-auto">
+              <span class="font-bold text-gray-300">Tools used:</span>
+              Java (Swing), MySQL, & IntelliJ Idea
+            </div>
+          </div>
+        </div>
+
+        <!--Project Card Wall-E-->
+        <div class="card-project text-center hocus-card">
+          <div class="absolute top-0 left-0 w-full h-20 bg-[#9ca3af] z-0"></div>
+          <div
+            class="relative z-10 flex flex-col h-full p-3 sm:p-3 md:p-4 xl:p-5 gap-3">
+            <div class="flex flex-row img-project justify-center">
+              <img src="/images/wall-e.jpg" alt="Arduino Wall-e 1 robocar" />
+              <img src="/images/wall-e2.jpg" alt="Arduino Wall-e 2 robocar" />
+            </div>
+
+            <h1 class="card-header">Arduino Robocar</h1>
+            <p class="card-body">
+              This robot is designed to detect and avoid obstacles. It primarily
+              uses an Ultrasonic Sensor for obstacle detection. Two IR sensors
+              serve as backup to ensure reliable detection if the ultrasonic
+              sensor fails. A servo motor is also used to scan nearby obstacles.
+              The system is powered by an Arduino Uno microcontroller, which
+              processes the sensor data and controls the robot's movement.
+            </p>
+            <div class="card-body text-left mt-auto">
+              <span class="font-bold text-gray-300">Tools used:</span>
+              Arduino IDE, Arduino UNO, IR/Ultrasonic Sensor, DC motors & L298n
+              Motor Driver
+            </div>
+          </div>
+        </div>
+
+        <!--Project Card Trashbin-->
+        <div class="card-project text-center hocus-card">
+          <div class="absolute top-0 left-0 w-full h-20 bg-[#9ca3af] z-0"></div>
+          <div
+            class="relative z-10 flex flex-col h-full p-3 sm:p-3 md:p-4 xl:p-5 gap-3">
+            <img
+              src="/images/Doraebin.jpg"
+              alt="Doraebin"
+              class="img-project" />
+            <h1 class="card-header">Arduino Smart Trashbin</h1>
+            <p class="card-body">
+              This is a robot that automatically opens its lid when it detects
+              an approaching object, such as a person's hand. Once detected, a
+              buzzer would mimic Doraemon's theme song. It uses an Ultrasonic
+              Sensor to detect the object and and a Servo Motor to open and
+              close the lid. The system is powered by an Arduino Uno
+              microcontroller, which processes the sensor data and controls the
+              servo motor.
+            </p>
+            <div class="card-body text-left mt-auto">
+              <span class="font-bold text-gray-300">Tools used:</span>
+              Arduino IDE, Arduino UNO, Ultrasonic Sensor, Buzzer, & Servo Motor
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Hobbies Section-->
+    <div
+      id="hobbies"
+      class="flex-center flex-col gap-3 text-white mt-5 p-5 grow div-padding">
+      <h1 class="fluid-text-head text-left font-bold text-highlight-green">
+        Hobbies
+      </h1>
+      <!--Hobbies Cards-->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 2xl:gap-10 mt-5 mx-5">
+        <div class="flex flex-col card hocus-card bg-black">
+          <div class="my-4"><i class="fa-solid fa-fish text-6xl"></i></div>
+          <h1 class="card-header">Fish Keeping</h1>
+          <p class="card-body">
+            Fish keeping is very wonderful. It allows me to relax, see my
+            beautiful fishes grow big and strong. I keep various fishes such as
+            Goldfish, Tetras, and Cichlids.
+          </p>
+        </div>
+
+        <div class="flex flex-col card hocus-card bg-black">
+          <div class="my-4"><i class="fa-solid fa-gamepad text-6xl"></i></div>
+          <h1 class="card-header">Gaming</h1>
+          <p class="card-body">
+            Video games are great! A it allows me to relax, have fun and a
+            moment to escape reality. I play various games such as Genshin
+            Impact, League of Legends, and Valorant.
+          </p>
+        </div>
+
+        <div class="flex flex-col card hocus-card bg-black">
+          <div class="my-4">
+            <i class="fa-solid fa-book-open text-6xl"></i>
+          </div>
+          <h1 class="card-header">Reading</h1>
+          <p class="card-body">
+            I enjoy reading a variety of medium such as comics, manga, manhwa,
+            novels or lightnovels. Reading allows me to immerse myself in
+            another world and pick up some lessons along the way.
+          </p>
+        </div>
+
+        <div class="flex flex-col card hocus-card bg-black">
+          <div class="my-4"><i class="fa-solid fa-headset text-6xl"></i></div>
+          <h1 class="card-header">Music</h1>
+          <p class="card-body">
+            I like to listen to music. It allows me to come up with wonderful
+            ideas whenever I work on a project. Any genre works for me, as long
+            as it can make me bop my head.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Skills Section-->
+    <div
+      class="flex-center flex-col gap-3 text-white mt-5 p-5 bg-black div-padding"
+      id="skills">
+      <h1 class="fluid-text-head text-left font-bold text-highlight-green">
+        Skills
+      </h1>
+
+      <!--Skills Cards-->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 2xl:gap-10 mt-5 p-5">
+        <!--Web Dev-->
+        <div class="flex flex-col card hocus-card">
+          <div class="my-4"><i class="fa-solid fa-code text-6xl"></i></div>
+          <h1 class="card-header">Web Development</h1>
+          <p class="card-body">
+            I have various projects involving web development. With experience
+            in frontend technologies: HTML, CSS, Tailwind CSS, & JS. As well as
+            backend such as PHP.
+          </p>
+        </div>
+        <!--Programming-->
+        <div class="flex flex-col card hocus-card">
+          <div class="my-4">
+            <i class="fa-solid fa-laptop-code text-6xl"></i>
+          </div>
+          <h1 class="card-header">Programming</h1>
+          <p class="card-body">
+            I have experience in programming languages such as Java, Python, and
+            JavaScript. Often used depending on the project requirements.
+          </p>
+        </div>
+        <!--DBM-->
+        <div class="flex flex-col card hocus-card">
+          <div class="my-4"><i class="fa-solid fa-database text-6xl"></i></div>
+          <h1 class="card-header">Database Management</h1>
+          <p class="card-body">
+            I have experience in database management using MySQL. I can create,
+            read, update, and delete data from databases.
+          </p>
+        </div>
+        <!--Hardware-->
+        <div class="flex flex-col card hocus-card">
+          <div class="my-4"><i class="fa-solid fa-computer text-6xl"></i></div>
+          <h1 class="card-header">Hardware and Systems</h1>
+          <p class="card-body">
+            Skilled in diagnosing computer systems, assembling custom
+            workstations, and applying core networking fundamentals to build
+            reliable, high-performing hardware setups.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Education Section-->
+    <div class="flex-center flex-col gap-3 text-white mt-5 p-5 div-padding">
+      <h1
+        id="education"
+        class="fluid-text-head text-left font-bold text-highlight-green">
+        Educational Background
+      </h1>
+
+      <!--Education Timeline-->
+      <ol
+        class="relative flex flex-col border-s-2 border-default mt:-4 md:flex-row md:border-t-2 md:border-s-0 md:mt-10 md:pt-4 md:gap-10">
+        <!--BulSU-->
+        <li class="mb-10 ms-4 li-point-x">
+          <div class="timeline-point bullet-point-x"></div>
+          <time class="text-sm font-normal leading-none text-body"
+            >August 2022 - June 2026</time
+          >
+          <h3
+            class="text-lg xl:text-2xl font-semibold text-heading my-2 text-highlight-green">
+            <i class="fa-solid fa-user-graduate"></i> Bulacan State University -
+            Meneses Campus
+          </h3>
+          <h4 class="text-md md:text-xl font-bold text-body mb-2">
+            <i class="fa-solid fa-graduation-cap"></i> Bachelor of Science in
+            Computer Engineering
+          </h4>
+
+          <ul class="ml-4 mb-4 list-disc list-outside text-md xl:text-lg">
+            <li class="mb-4">
+              <span class="text-highlight-green">Honors:</span> Summa Cum Laude
+              (Top 1 Student in Class) | GWA: 1.11
+            </li>
+            <li>
+              <span class="text-highlight-green">Thesis:</span> Aegis of
+              Cyberprotection: A physical cyber-defense sentinel device to
+              detect and block both network and hardware threats
+            </li>
+          </ul>
+        </li>
+
+        <!--Marcelo-->
+        <li class="mb-10 ms-4 li-point-x">
+          <div class="timeline-point bullet-point-x"></div>
+          <time class="text-sm font-normal leading-none text-body"
+            >June 2016 - July 2022</time
+          >
+          <h3
+            class="text-lg xl:text-2xl font-semibold text-heading my-2 text-highlight-green">
+            <i class="fa-solid fa-building-columns"></i> Marcelo H. Del Pilar
+            National High School
+          </h3>
+          <h4 class="text-md md:text-xl font-bold text-body mb-4 mt-auto">
+            <i class="fa-solid fa-graduation-cap"></i> Senior High (STEM Strand)
+          </h4>
+
+          <ul class="ml-4 mb-4 list-disc list-outside text-body">
+            <li class="mb-2">Graduated with High Honors | GWA: 94</li>
+          </ul>
+        </li>
+
+        <!--ESLS-->
+        <li class="ms-4 li-point-x">
+          <div class="timeline-point bullet-point-x"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-body"
+            >2010 - 2016</time
+          >
+          <h3
+            class="text-lg xl:text-2xl font-semibold text-heading my-2 text-highlight-green">
+            <i class="fa-solid fa-school"></i> Easy Steps Learning School
+          </h3>
+          <h4 class="text-md md:text-xl font-bold text-body mb-2">
+            <i class="fa-solid fa-graduation-cap"></i> Elementary
+          </h4>
+        </li>
+      </ol>
+    </div>
+    <footer class="w-full h-10 bg-gray-400 flex-center items-center">
+      <h1 class="text-sm font-semibold">
+        © <span id="year">{year}</span> Matthew Antonio. Made with Love ❤️
+      </h1>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/578707ab7e.js"
+      crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
